@@ -1,0 +1,42 @@
+{
+  "name": "react-library-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/umd/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "start": "vite",
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "antd": "^4.24.14",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "styled-components": "^6.0.8"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5",
+    "typescript": "^5.0.2",
+    "@vitejs/plugin-react": "^4.0.3",
+    "father": "^4.3.5",
+    "@types/react": "^17.0",
+    "@types/react-dom": "^17.0.0",
+    "webpack": "^5.88.2",
+    "babel-plugin-import": "^1.13.8"
+  }
+}
