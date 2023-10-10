@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "./main.css";
+import "./index.less";
 
 class MyLibrary {
   render(rootElementId: string) {
