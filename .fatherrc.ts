@@ -27,6 +27,15 @@ export default defineConfig({
       },
     ],
   ],
+  extraBabelPresets: [
+    [
+      "@babel/preset-env",
+      {
+        useBuiltIns: "entry",
+        corejs: 3,
+      },
+    ],
+  ],
   prebundle: {
     deps: {},
   },
